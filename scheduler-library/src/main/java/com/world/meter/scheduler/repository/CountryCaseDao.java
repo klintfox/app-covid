@@ -1,4 +1,4 @@
-package com.world.meter.scheduler.dao;
+package com.world.meter.scheduler.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 

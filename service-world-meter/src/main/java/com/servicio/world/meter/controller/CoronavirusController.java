@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.servicio.world.meter.model.Country;
-import com.servicio.world.meter.utils.Constants;
-import com.servicio.world.meter.utils.GeneralFunctions;
+import com.world.meter.model.Country;
+import com.world.meter.utils.Constants;
+import com.world.meter.utils.GeneralFunctions;
 
 @RestController
 @RequestMapping("/api/v1/coronavirus")

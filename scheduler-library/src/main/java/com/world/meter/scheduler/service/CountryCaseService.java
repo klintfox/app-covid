@@ -7,22 +7,23 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-import com.world.meter.scheduler.dao.CountryCaseDao;
-import com.world.meter.scheduler.model.Country;
+import com.world.meter.model.Country;
 import com.world.meter.scheduler.model.CountryCase;
+import com.world.meter.scheduler.repository.CountryCaseDao;
 import com.world.meter.utils.Constants;
 import com.world.meter.utils.GeneralFunctions;
 
 @Service
 public class CountryCaseService {
 	
-//	@Autowired
+	@Autowired
 	private SequenceGeneratorService sequenceGeneratorService;
 	
-//	@Autowired
+	@Autowired
 	private CountryCaseDao countryDao;
 
 	Logger log = LoggerFactory.getLogger(CountryCaseService.class);
@@ -43,7 +44,7 @@ public class CountryCaseService {
 				CountryCase countryCase = new CountryCase();
 				countryCase.setId(sequenceGeneratorService.generateSequence(CountryCase.SEQUENCE_NAME));
 				countryCase.setName(lstCountries.get(i).getName());
-				countryCase.setTotalCases(lstCountries.get(i).getTotalCases());
+				countryCase.setTotalCases(Integer.parseInt(lstCountries.get(i).getTotalCases()));
 				countryCase.setNewCases(lstCountries.get(i).getNewCases());
 				countryCase.setTotalDeaths(lstCountries.get(i).getTotalDeaths());
 				countryCase.setNewDeaths(lstCountries.get(i).getNewDeaths());
