@@ -2,7 +2,7 @@
 
 # Spanish
 # Resumen
-Crear proyectos con diferentes soluciones y tecnolgías utilizando la información de la tabla de casos de #worldMeter
+Crear proyectos con diferentes soluciones y tecnologías utilizando la información de la tabla de casos de #worldMeter
 
 # Repositorio
 - Proyecto 1 - Crear repositorio en gitHut para crear diferentes soluciones con la información de #worldMeter
