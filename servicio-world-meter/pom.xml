@@ -12,8 +12,8 @@
 	<groupId>com.servicio.world.meter</groupId>
 	<artifactId>servicio-world-meter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>servicio-world-meter</name>
-	<description>World Meter Service</description>
+	<name>service-world-meter</name>
+	<description>Web service to show information of table of cases by coronavirur from WorldMeter</description>
 
 	<properties>
 		<java.version>1.8</java.version>
