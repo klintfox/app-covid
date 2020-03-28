@@ -1,5 +1,12 @@
 package com.world.meter;
 
+/*
+ * @author      Klint Román
+ * @version     1.0
+ * @since       2020-03-27
+ *
+*/
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;

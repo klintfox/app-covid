@@ -14,9 +14,9 @@ import com.world.meter.model.Country;
 public class GeneralFunctions {
 
 	/**
-	 * 
-	 * @param urlHtml de la página que contiene una tabla
-	 * @return list of countries with
+	 * Give information from table of cases of coronavirus by WorldMeter
+	 * @param urlHtml is the page the have the information
+	 * @return List<Country>
 	 */
 	public static List<Country> getCountriesCases(String urlHtml) {
 		List<Country> lstCountries = new ArrayList<>();
