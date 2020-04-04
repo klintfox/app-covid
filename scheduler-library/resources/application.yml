@@ -2,10 +2,10 @@
 spring:
   data:
     mongodb:
-      host: localhost
-      port: 27017
-      uri: mongodb://localhost/coronavirus
-      #'mongodb+srv://admin:mongo@cluster0-51bxy.mongodb.net/coronavirus?retryWrites=true&w=majority'
+      #host: localhost
+      #port: 27017
+      #uri: mongodb://localhost/coronavirus
+      uri: mongodb+srv://admin:mongo@cluster0-51bxy.mongodb.net/coronavirus?retryWrites=true&w=majority
 # HTTP Server
 #server:
 #  port: 8090   # HTTP (Tomcat) port

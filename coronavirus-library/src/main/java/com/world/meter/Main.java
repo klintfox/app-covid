@@ -19,17 +19,17 @@ import com.world.meter.utils.GeneralFunctions;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-
+		System.out.println(new Date());
 		try {
 			List<Country> lstCountries = new ArrayList<>();
 			lstCountries = GeneralFunctions.getCountriesCases(Constants.URLTABLE);
-			System.out.println(new Date());
 			for (int i = 0; i < lstCountries.size(); i++) {
-				System.out.println(i + 1 + ": " + lstCountries.get(i).getName() + " " + lstCountries.get(i).getTotalCases());
+				System.out.println(
+						i + 1 + ": " + lstCountries.get(i).getName() + " " + lstCountries.get(i).getTotalCases());
 			}
-			System.out.println(new Date());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		System.out.println(new Date());
 	}
 }

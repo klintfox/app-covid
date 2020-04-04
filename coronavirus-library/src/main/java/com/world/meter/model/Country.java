@@ -12,13 +12,14 @@ public class Country {
 	private String seriousCritical;
 	private String totCasesOneMperPop;
 	private String totDeathsOneMperPop;
+	private String reportedFirstCase;
 
 	public Country() {
 	}
 
 	public Country(String name, String totalCases, String newCases, String totalDeaths, String newDeaths,
 			String totalRecovered, String activeCases, String seriousCritical, String totCasesOneMperPop,
-			String totDeathsOneMperPop) {
+			String totDeathsOneMperPop, String reportedFirstCase) {
 		super();
 		this.name = name;
 		this.totalCases = totalCases;
@@ -30,14 +31,7 @@ public class Country {
 		this.seriousCritical = seriousCritical;
 		this.totCasesOneMperPop = totCasesOneMperPop;
 		this.totDeathsOneMperPop = totDeathsOneMperPop;
-	}
-
-	@Override
-	public String toString() {
-		return "Country [name=" + name + ", totalCases=" + totalCases + ", newCases=" + newCases + ", totalDeaths="
-				+ totalDeaths + ", newDeaths=" + newDeaths + ", totalRecovered=" + totalRecovered + ", activeCases="
-				+ activeCases + ", seriousCritical=" + seriousCritical + ", totCasesOneMperPop=" + totCasesOneMperPop
-				+ ", totDeathsOneMperPop=" + totDeathsOneMperPop + "]";
+		this.reportedFirstCase = reportedFirstCase;
 	}
 
 	public String getName() {
@@ -80,6 +74,10 @@ public class Country {
 		return totDeathsOneMperPop;
 	}
 
+	public String getReportedFirstCase() {
+		return reportedFirstCase;
+	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -118,6 +116,10 @@ public class Country {
 
 	public void setTotDeathsOneMperPop(String totDeathsOneMperPop) {
 		this.totDeathsOneMperPop = totDeathsOneMperPop;
+	}
+
+	public void setReportedFirstCase(String reportedFirstCase) {
+		this.reportedFirstCase = reportedFirstCase;
 	}
 
 }

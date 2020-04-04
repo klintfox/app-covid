@@ -45,33 +45,40 @@ public class GeneralFunctions {
 						if (j == 0) {
 							country.setName(rowItems.get(j).text());
 						} else if (j == 1) {
-							country.setTotalCases(rowItems.get(j).text());
+							country.setTotalCases(replaceComas(rowItems.get(j).text()));
 						} else if (j == 2) {
-							country.setNewCases(rowItems.get(j).text());
+							country.setNewCases(replaceComas(rowItems.get(j).text()));
 						} else if (j == 3) {
-							country.setTotalDeaths(rowItems.get(j).text());
+							country.setTotalDeaths(replaceComas(rowItems.get(j).text()));
 						} else if (j == 4) {
-							country.setNewDeaths(rowItems.get(j).text());
+							country.setNewDeaths(replaceComas(rowItems.get(j).text()));
 						} else if (j == 5) {
-							country.setTotalRecovered(rowItems.get(j).text());
+							country.setTotalRecovered(replaceComas(rowItems.get(j).text()));
 						} else if (j == 6) {
-							country.setActiveCases(rowItems.get(j).text());
+							country.setActiveCases(replaceComas(rowItems.get(j).text()));
 						} else if (j == 7) {
-							country.setSeriousCritical(rowItems.get(j).text());
+							country.setSeriousCritical(replaceComas(rowItems.get(j).text()));
 						} else if (j == 8) {
-							country.setTotCasesOneMperPop(rowItems.get(j).text());
+							country.setTotCasesOneMperPop(replaceComas(rowItems.get(j).text()));
 						} else if (j == 9) {
-							country.setTotDeathsOneMperPop(rowItems.get(j).text());
+							country.setTotDeathsOneMperPop(replaceComas(rowItems.get(j).text()));
 							lstCountries.add(country);
 						}
 					}
 				}
 			}
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		return lstCountries;
+	}
+
+	public static String replaceComas(String text) {
+		String result = "0";
+		if (!text.isEmpty()) {
+			result = text.replace(",", "");
+		}
+		return result;
 	}
 
 }
