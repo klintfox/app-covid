@@ -25,11 +25,6 @@ public class GeneralFunctions {
 		try {
 			Document doc = Jsoup.connect(urlHtml).get();
 			Elements tableElements = doc.select("table");
-//			Elements tableHeaderEles = tableElements.select("thead tr th");
-//			System.out.println("headers");
-//			for (int i = 0; i < tableHeaderEles.size(); i++) {
-//				System.out.println(tableHeaderEles.get(i).text());
-//			}
 			Country country;
 			Elements tableRowElements = tableElements.select(":not(thead) tr");
 			for (int i = 0; i < tableRowElements.size(); i++) {

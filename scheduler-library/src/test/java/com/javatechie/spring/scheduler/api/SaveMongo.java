@@ -37,7 +37,7 @@ public class SaveMongo {
 				countryCase.setTotalCases(Integer.parseInt(lstCountries.get(i).getTotalCases()));
 				countryCase.setNewCases(lstCountries.get(i).getNewCases());
 				countryCase.setTotalDeaths(Integer.parseInt(lstCountries.get(i).getTotalDeaths()));
-				countryCase.setNewDeaths(Integer.parseInt(lstCountries.get(i).getNewDeaths()));
+				countryCase.setNewDeaths(lstCountries.get(i).getNewDeaths());
 				countryCase.setTotalRecovered(Integer.parseInt(lstCountries.get(i).getTotalRecovered()));
 				countryCase.setActiveCases(Integer.parseInt(lstCountries.get(i).getActiveCases()));
 				countryCase.setSeriousCritical(Integer.parseInt(lstCountries.get(i).getSeriousCritical()));

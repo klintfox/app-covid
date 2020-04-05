@@ -24,7 +24,7 @@ public class SaveMongoCloud {
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 
-		String uriconnection = GeneralConstants.URI_DEV_CONNECTION;
+		String uriconnection = GeneralConstants.URI_PROD_CONNECTION;
 		MongoClientURI uri = new MongoClientURI(uriconnection);
 		MongoClient mongo_client = new MongoClient(uri);
 		MongoDatabase db = mongo_client.getDatabase("coronavirus");
@@ -43,7 +43,7 @@ public class SaveMongoCloud {
 				countryCase.setTotalCases(Integer.parseInt(lstCountries.get(i).getTotalCases()));
 				countryCase.setNewCases(lstCountries.get(i).getNewCases());
 				countryCase.setTotalDeaths(Integer.parseInt(lstCountries.get(i).getTotalDeaths()));
-				countryCase.setNewDeaths(Integer.parseInt(lstCountries.get(i).getNewDeaths()));
+				countryCase.setNewDeaths(lstCountries.get(i).getNewDeaths());
 				countryCase.setTotalRecovered(Integer.parseInt(lstCountries.get(i).getTotalRecovered()));
 				countryCase.setActiveCases(Integer.parseInt(lstCountries.get(i).getActiveCases()));
 				countryCase.setSeriousCritical(Integer.parseInt(lstCountries.get(i).getSeriousCritical()));

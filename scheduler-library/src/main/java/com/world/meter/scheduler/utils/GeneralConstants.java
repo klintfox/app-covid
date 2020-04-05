@@ -8,6 +8,6 @@ public class GeneralConstants {
 	public final static long TIEMPO_SCHEDULER = 600000;
 	
 	
-	public final static String URI_DEV_CONNECTION="mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=false";
+	public final static String URI_PROD_CONNECTION="mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=false";
 	
 }

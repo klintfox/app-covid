@@ -11,7 +11,7 @@ import com.world.meter.scheduler.utils.GeneralConstants;
 @Configuration
 public class SpringMongoCloudConfig {
 	public @Bean MongoTemplate mongoTemplate() throws Exception {
-		MongoTemplate mongoTemplate = new MongoTemplate((MongoDbFactory) new MongoClientURI(GeneralConstants.URI_DEV_CONNECTION));
+		MongoTemplate mongoTemplate = new MongoTemplate((MongoDbFactory) new MongoClientURI(GeneralConstants.URI_PROD_CONNECTION));
 		return mongoTemplate;
 
 	}

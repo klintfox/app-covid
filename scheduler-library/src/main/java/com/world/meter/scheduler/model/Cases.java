@@ -28,7 +28,7 @@ public class Cases {
 	private Integer totalDeaths;
 	
 	@JsonProperty("newDeaths")
-	private Integer newDeaths;
+	private String newDeaths;
 	
 	@JsonProperty("totalRecovered")
 	private Integer totalRecovered;
@@ -77,10 +77,6 @@ public class Cases {
 		return totalDeaths;
 	}
 
-	public Integer getNewDeaths() {
-		return newDeaths;
-	}
-
 	public Integer getTotalRecovered() {
 		return totalRecovered;
 	}
@@ -117,10 +113,6 @@ public class Cases {
 		this.totalDeaths = totalDeaths;
 	}
 
-	public void setNewDeaths(Integer newDeaths) {
-		this.newDeaths = newDeaths;
-	}
-
 	public void setTotalRecovered(Integer totalRecovered) {
 		this.totalRecovered = totalRecovered;
 	}
@@ -155,6 +147,14 @@ public class Cases {
 
 	public void setReportedFirstCase(String reportedFirstCase) {
 		this.reportedFirstCase = reportedFirstCase;
+	}
+
+	public String getNewDeaths() {
+		return newDeaths;
+	}
+
+	public void setNewDeaths(String newDeaths) {
+		this.newDeaths = newDeaths;
 	}
 	
 	
