@@ -32,7 +32,7 @@ Crear proyectos con diferentes soluciones y tecnologías utilizando la informaci
 - Proyecto 2 - WebService para mostrar información de #postgreSql
 
 ## FrontEnd
-# Angular 7,8,9
+### Angular
 - Proyecto 1 - Creación de un DashBoard utilizando #angular #typescript #npm
 
 ### Javascript 
